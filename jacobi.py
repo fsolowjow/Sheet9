@@ -66,6 +66,7 @@ def JacobiLGL(alpha, beta, n):
 	quadrature_weights[0]= 2/(n*(n-1))
 	return quadrature_points, quadrature_weights	
 
+#e)
 def JacobiVMat(x,n):
 	points,temp = JacobiLGL(0,0,n)
 	V=np.zeros((n+1,n+1))
